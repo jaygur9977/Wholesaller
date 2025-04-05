@@ -1,8 +1,18 @@
-import React from 'react'
+import Hero from './components/Hero'
+import Features from './components/Features'
+import Footer from './components/Footer'
+import './styles/globals.css'
+import './App.css'
 
-const App = () => {
+function App() {
   return (
-    <div>App</div>
+    <div className="app">
+      <Hero />
+      <main id="main">
+        <Features />
+      </main>
+      <Footer />
+    </div>
   )
 }
 

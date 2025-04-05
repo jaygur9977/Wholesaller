@@ -55,7 +55,7 @@ const LoginSignup = () => {
 
     try {
       // POST request to your backend API
-      const response = await axios.post('http://localhost:5000/api/users/register', formData, {
+      const response = await axios.post('https://wholesaller.onrender.com/api/users/register', formData, {
         headers: {
           'Content-Type': 'multipart/form-data', // Ensure the correct content type is set
         }

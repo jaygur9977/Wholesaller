@@ -29,7 +29,7 @@ const App = () => {
     const fetchAllWholesalers = async () => {
       setLoading(true);
       try {
-        const response = await axios.get('http://localhost:5000/api/users/search', {
+        const response = await axios.get('https://wholesaller.onrender.com/api/users/search', {
           params: { role: 'wholesaler' }
         });
         setAllWholesalers(response.data.data);
