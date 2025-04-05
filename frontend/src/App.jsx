@@ -1,18 +1,8 @@
-import Hero from './components/Hero'
-import Features from './components/Features'
-import Footer from './components/Footer'
-import './styles/globals.css'
-import './App.css'
+import React from 'react'
 
-function App() {
+const App = () => {
   return (
-    <div className="app">
-      <Hero />
-      <main id="main">
-        <Features />
-      </main>
-      <Footer />
-    </div>
+    <div>App</div>
   )
 }
 
