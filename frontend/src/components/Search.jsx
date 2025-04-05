@@ -107,11 +107,29 @@ const App = () => {
     setFilters({ category: [], state: '', city: '' });
     setFilteredWholesalers(allWholesalers);
   };
-
+    const [isLoading, setIsLoading] = useState(false);
+  
+    const handleLoginRedirect = () => {
+      setIsLoading(true);
+      window.location.href = '/';
+      window.location.pathname = '/';
+    };
   return (
     <div className="flex flex-col md:flex-row p-4 gap-6">
         <div className="w-full md:w-1/4 bg-white p-6 rounded-lg shadow-md">
         <h2 className="text-xl font-semibold mb-4">Filters</h2>
+
+
+        <button
+          className="inline-flex items-center m-4 px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700"
+          onClick={handleLoginRedirect}
+          disabled={isLoading}
+          >
+         {isLoading ? 'Redirecting...' : 'back'}
+
+        </button>
+       
+
         
         {/* Categories Filter */}
         <div className="mb-6">

@@ -200,9 +200,27 @@ const ComparePage = () => {
     setLoading(false);
   };
 
+
+    const [isLoading, setIsLoading] = useState(false);
+    
+      const handleLoginRedirect = () => {
+        setIsLoading(true);
+        window.location.href = '/';
+        window.location.pathname = '/';
+      };
+
   return (
     <div className="p-6">
-      <h2 className="text-2xl font-semibold mb-6">Compare Wholesalers</h2>
+      <h2 className="text-2xl font-semibold mb-6 ">Compare Wholesalers</h2>
+
+      <button
+          className="inline-flex items-center mb-3 px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700"
+          onClick={handleLoginRedirect}
+          disabled={isLoading}
+          >
+         {isLoading ? 'Redirecting...' : 'back'}
+
+        </button>
 
       {/* Address Input */}
       <textarea
