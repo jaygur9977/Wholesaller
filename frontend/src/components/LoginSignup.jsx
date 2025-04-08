@@ -161,7 +161,7 @@ const LoginSignup = () => {
 
   return (
     <div className="container mx-auto p-4 md:p-8">
-      <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+      <div className="max-w-md mx-auto bg-blue-100 rounded-xl shadow-md overflow-hidden md:max-w-2xl">
         <div className="p-8">
           <div className="text-center">
             <h2 className="text-2xl font-bold text-gray-800 mb-2">Welcome to Wholesaller</h2>
@@ -531,7 +531,7 @@ const LoginSignup = () => {
 
             {errorMessage && (
               <div className="mt-4 p-3 bg-red-50 text-red-600 rounded-md text-sm">
-                {errorMessage}
+                {"gives anothe email this email is used"}
               </div>
             )}
           </form>
